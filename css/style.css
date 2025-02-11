@@ -9,15 +9,71 @@ body {
     margin-right: 3rem;
 }
 
+section {
+    margin-bottom: 50px;
+}
+
+/*FONT STYLING*/
+
+.menuFont {
+    color: #C0B5A2;
+    text-decoration: none;
+    font-family: "Instrument Sans", serif;
+    font-size: 3rem;
+}
+
+/*Menu underline animation*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #C0B5A2;
+    transform-origin: bottom right;
+    transition: transform 0.55s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+#kamillaRiederh1 {
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    color: #BF712C;
+    font-size: 6rem;
+    font-weight: 1000;
+}
+
+#whatIdoWords {
+    color: #826A50;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+}
+
 p {
     color: #DFDFDF;
+    font-family: "Instrument Sans", serif;
 }
 
 .headlines {
     color: #BF712C;
+    font-family: "Instrument Sans", serif;
 
 }
 
-section {
-    margin-bottom: 50px;
+#keywords {
+    color: #CEC6B1;
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+    word-spacing: 2rem;
 }
+
+/*IMAGE STYLING*/
