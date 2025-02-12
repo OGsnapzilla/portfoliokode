@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIEDERVISUALS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/sectionsAnimation.js" defer></script>
 
     <!--IMPORTED FONTS-->
     <style>
@@ -25,42 +25,60 @@
     <!-- START PAGE -->
     <section class="startPageSection">
 
-        <section id="whatIdoSection"><p id="whatIdoWords">UX RESEARCH & DESIGN <br> FRONT END DEVELOPMENT</p></section>
-        <section id="heroImgContainer"><img id="heroImg" src="" alt="Large portrait"></section>
-        <section id="nameContainer"><h1 id="kamillaRiederh1">KAMILLA RIEDER</h1></section>
-        <section id="menuContainer">
-            <a class="menuFont hover-underline-animation center"  href=".aboutMeSection">ABOUT ME</a><br>
-            <a class="menuFont hover-underline-animation center"  href=".capabilitiesSection">CAPABILITIES</a><br>
-            <a class="menuFont hover-underline-animation center"  href=".projectsSection">PROJECTS</a><br>  
-            <a class="menuFont hover-underline-animation center"  href=".contactSection">CONTACT</a>
-        </section>
+        <section id="whatIdoSection"></section>
 
+        <!-- Left Column: Hero Image -->
+        <section id="heroImgContainer">
+
+            <img id="heroImg" src="images/temporary4.jpg" alt="Large portrait">
+        </section>
+    
+        <!-- Right Column: Name + Menu -->
+        <section id="nameContainer">
+
+            <p id="whatIdoWords">UX RESEARCH & DESIGN <br> FRONT END DEVELOPMENT</p>
+            <h1 id="kamillaRiederh1">KAMILLA RIEDER</h1>
+
+            <section id="menuContainer">
+                <a class="menuFont hover-underline-animation" href="#aboutMeSection">ABOUT ME</a>
+                <a class="menuFont hover-underline-animation" href="#capabilitiesSection">CAPABILITIES</a>
+                <a class="menuFont hover-underline-animation" href="#projectsSection">PROJECTS</a>
+                <a class="menuFont hover-underline-animation" href="#contactSection">CONTACT</a>
+            </section>
+        </section>
+    
     </section>
 
     <!-- ABOUT ME -->
-    <section class="aboutMeSection">
+    <section id="aboutMeSection" class="hidden">
 
         <section class="headlines">
             <h2>A LITTLE</h2>
             <h1>ABOUT ME</h1>
         </section>
 
-        <h3 id="keywords">CURIOUS MULTIFACETED RESPONSIBLE NERD</h3>
+        <section class="hidden"><h3 id="keywords">CURIOUS MULTIFACETED RESPONSIBLE NERD</h3></section>
 
-        <p>paragraph paragraph paragraphparagraphparagraphparagraphparagraph <br>paragraph paragraph
-            paragraph paragraph paragraphparagraphparagraphparagraphparagraphparagraph
-            paragraphparagraph <br>
-            paragraphparagraphparagraphparagraphparagraph
+        <p id="aboutMeParagraph">With my base in Denmark I’ve spent most of my life committed to keeping my self-growth in motion. This means I have acquired a wide array of experience throughout the years; <br>
+           from living abroad, to working as a tattoo artist for five years, then deciding to go back to school studying computer science and finally ending up in the world of multimedia design, <br>
+           in which I have acquired a certain love for UX design and front end development. 
+           It is safe to say <i>I love learning. </i><br> <br>
+
+           While my career-path hasn't exactly been linear, I find that, thanks to the occasional re-routing, I've come out of it with a skillset that can be applied in various aspects of my life. <br>
+           Skills that I want to showcase both in practice and through me as a person. <br><br>
+
+           And while learning is fun, I also do enjoy reading books, honing my drawing-skills, diving into the world of fantasy through games, tending to my garden, and riding my motorbike in my free-time. <br><br>
+           In short: <br>Hi. I'm Kamilla, and I'm a nerd.
         </p>
 
         <section id="aboutMeImageSection">
-            <img id="aboutMeImg" src="#" alt="">
+            <img id="aboutMeImg" src="images/temporary3.jpg" alt="">
         </section>
 
     </section>
 
     <!-- CAPABILITIES -->
-    <section class="capabilitesSection">
+    <section id="capabilitesSection" class="hidden">
         <section class="headlines">
             <h2>MY</h2>
             <h1>CAPABILITIES</h1>
@@ -69,7 +87,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projectsSection">
+    <section id="projectsSection" class="hidden">
         <section class="headlines">
             <h2>PREVIOUS</h2>
             <h1>PROJECTS</h1>
@@ -77,7 +95,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contactSection">
+    <section id="contactSection" class="hidden">
         <section class="headlines">
             <h2>FEEL FREE TO</h2>
             <h1>CONTACT ME</h1>
