@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIEDERVISUALS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imageslider.scss">
     <script src="js/sectionsAnimation.js" defer></script>
+    <script src="js/slider.js" defer></script>
 
     <!--IMPORTED FONTS-->
     <style>
@@ -80,20 +82,88 @@
 
     </section>
 
+       <!-- PROJECTS -->
+       <section id="projectsSection" class="hidden">
+        <section class="headlines">
+            <h2>PREVIOUS</h2>
+            <h1>PROJECTS</h1>
+        </section>
+
+        <!--IMAGE SLIDER-->
+
+        <div class="swiper-container main-slider loading">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+                  <img src="images/skateducate.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Skateducate</p>
+                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+                  <img src="images/intera.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Interactive Storytelling</p>
+                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
+                  <img src="images/onmag.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Online Magazine</p>
+                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
+          
+          <!-- Thumbnail navigation -->
+          <div class="swiper-container nav-slider loading">
+            <div class="swiper-wrapper" role="navigation">
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(images/skateducate.jpg)">
+                  <img src="images/skateducate.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Skateducate</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(images/intera.jpg)">
+                  <img src="images/intera.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Interactive Storytelling</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url(images/onmag.jpg)">
+                  <img src="images/onmag.jpg" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Online magazine</p>
+                </div>
+              </div>
+          </div>
+
+    </section>
+
     <!-- CAPABILITIES -->
     <section id="capabilitesSection" class="hidden">
         <section class="headlines">
             <h2>MY</h2>
             <h1>CAPABILITIES</h1>
             <h2>AND VALUES</h2>
-        </section>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projectsSection" class="hidden">
-        <section class="headlines">
-            <h2>PREVIOUS</h2>
-            <h1>PROJECTS</h1>
         </section>
     </section>
 
