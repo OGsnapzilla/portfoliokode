@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIEDERVISUALS</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/imageslider.scss">
+    <link rel="stylesheet" href="css/gallery.css">
     <script src="js/sectionsAnimation.js" defer></script>
-    <script src="js/slider.js" defer></script>
+
+   
 
     <!--IMPORTED FONTS-->
     <style>
@@ -43,7 +44,7 @@
 
             <section id="menuContainer">
                 <a class="menuFont hover-underline-animation" href="#aboutMeSection">ABOUT ME</a>
-                <a class="menuFont hover-underline-animation" href="#capabilitiesSection">CAPABILITIES</a>
+                <!--<a class="menuFont hover-underline-animation" href="#capabilitiesSection">CAPABILITIES</a>-->
                 <a class="menuFont hover-underline-animation" href="#projectsSection">PROJECTS</a>
                 <a class="menuFont hover-underline-animation" href="#contactSection">CONTACT</a>
             </section>
@@ -63,21 +64,28 @@
 
 <section id="aboutMeContent">
 
-        <p id="aboutMeParagraph">With my base in Denmark I’ve spent most of my life committed to keeping my self-growth in motion. This means I have acquired a wide array of experience throughout the years; <br>
-           from living abroad, to working as a tattoo artist for five years, then deciding to go back to school studying computer science and finally ending up in the world of multimedia design, <br>
+        <p id="aboutMeParagraph">With my base in Denmark I’ve spent most of my life committed to keeping my self-growth in motion. This means I have acquired a wide array of experience throughout the years: 
+           from living abroad, to working as a tattoo artist for five years, then deciding to go back to school studying computer science and finally ending up in the world of multimedia design, 
            in which I have acquired a certain love for UX design and front end development. 
-           It is safe to say <i>I love learning. </i><br> <br>
+           <br>It is safe to say <i>I love learning. </i><br> <br>
 
            While my career-path hasn't exactly been linear, I find that, thanks to the occasional re-routing, I've come out of it with a skillset that can be applied in various aspects of my life. <br>
            Skills that I want to showcase both in practice and through me as a person. <br><br>
 
-           And while learning is fun, I also do enjoy reading books, honing my drawing-skills, diving into the world of fantasy through games, tending to my garden, and riding my motorbike in my free-time. <br><br>
+           I definitely also have a certain knack for collecting hobbies, which include, but aren't limited to, reading books, photography, crocheching, playing games (preferably the ones with dragons, monsters and magic), tending to my garden, and riding my motorbike in the summer months.
+           <br><br>
            In short: <br>Hi. I'm Kamilla, and I'm a nerd.
+
+      
+            <img id="aboutMeDrawings" src="images/completedrawings.png" alt="Drawings">
+          
         </p>
 
         <section id="aboutMeImageSection">
             <img id="aboutMeImg" src="images/temporary3.jpg" alt="">
         </section>
+
+  
     </section>
 
     </section>
@@ -86,92 +94,82 @@
        <section id="projectsSection" class="hidden">
         <section class="headlines">
             <h2>PREVIOUS</h2>
-            <h1>PROJECTS</h1>
+            <h1 id="projectsh1">PROJECTS</h1>
         </section>
-
-        <!--IMAGE SLIDER-->
-
-        <div class="swiper-container main-slider loading">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
-                  <img src="images/skateducate.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Skateducate</p>
-                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
-                  <img src="images/intera.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Interactive Storytelling</p>
-                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
-                  <img src="images/onmag.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Online Magazine</p>
-                  <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
-          </div>
-          
-          <!-- Thumbnail navigation -->
-          <div class="swiper-container nav-slider loading">
-            <div class="swiper-wrapper" role="navigation">
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(images/skateducate.jpg)">
-                  <img src="images/skateducate.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Skateducate</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(images/intera.jpg)">
-                  <img src="images/intera.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Interactive Storytelling</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <figure class="slide-bgimg" style="background-image:url(images/onmag.jpg)">
-                  <img src="images/onmag.jpg" class="entity-img" />
-                </figure>
-                <div class="content">
-                  <p class="title">Online magazine</p>
-                </div>
-              </div>
-          </div>
-
     </section>
 
+    <div class="container">
+      <div class="box">
+        <span>Skateducate </span> <br>
+        <p>Second semester examination project, 2025. <br><br>
+        <b>Goal:</b> To  upgrade their website and strengthen Skateducates visual identity. <br>
+        <b>Solution:</b> Drawing a parallel from the associations logo, we created a colorful and fun website that corresponds with Skateducates values.
+        <br></p>
+        <img src="images/su.webp">
+
+      </div>
+      <div class="box">
+        <span>Interactive storytelling</span> <br>
+        <p>Interactive storytelling group project for the Steno Museum, 2024<br><br>
+          <b>Goal:</b> Develop a fun and interactive teaching tool for the museums target group.  <br>
+          <b>Solution:</b> We created a horizontal 'travel through time' experience, in which the user gets relevant information as they walk along the timeline.
+          <br></p>
+        <img src="images/is.webp">
+      </div>
+      <div class="box">
+        <span>Online Magazine</span> <br>
+        <p>Individual project, 2024. <br>
+        <b>Goal:</b> To become familiar with UX research metholodologies and develop an informational magazine about our own chosen subject.  <br>
+        <b>Solution:</b> </p>
+        <img src="images/tk.webp">
+        
+      </div>
+    </div>
+
+
     <!-- CAPABILITIES -->
-    <section id="capabilitesSection" class="hidden">
+    <!--<section id="capabilitesSection" class="hidden">
         <section class="headlines">
             <h2>MY</h2>
             <h1>CAPABILITIES</h1>
             <h2>AND VALUES</h2>
-        </section>
-    </section>
 
+            <section id="capabilitiesContent">
+
+              <section id="technicalContent">
+                <h3>TECHNICAL</h3>
+                <p>HTML, CSS, Javascript, Java, SQL, Figma, Trello, Miro, GitHub, Adobe Photoshop, SCRUM, Visual Paradigm</p>
+              </section>
+      
+              <section id="personalContent">
+                <h3>PERSONAL</h3>
+                <p>Teamplayer, sense for time-management, sustainability oriented, independant</p>
+              </section>
+              
+              <section id="valuesContent">
+                <h3>VALUES</h3>
+                <p>Sustainability,</p>
+              </section>
+      
+            </section>
+      
+          </section>
+      
+        </section>
+        -->
+
+        
     <!-- CONTACT -->
     <section id="contactSection" class="hidden">
         <section class="headlines">
             <h2>FEEL FREE TO</h2>
             <h1>CONTACT ME</h1>
+        </section>
+
+        <a class="hover-underline-animation" href="mailto:contactkamillarieder@gmail.com"><h3>CONTACTKAMILLARIEDER@GMAIL.COM</h3></a>
+        <section id="contactIcons">
+          <a href="https://www.linkedin.com/in/kamilla-rieder-58b83124b/"><img src="images/linkedin.webp" alt="LinkedIn icon"></a>
+          <a href="https://github.com/OGsnapzilla"><img src="images/github.webp" alt="Github icon"></a>
         </section>
     </section>
 
