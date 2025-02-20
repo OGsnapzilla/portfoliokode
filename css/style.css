@@ -59,12 +59,12 @@ section {
 
 #aboutMeContent {
     display: flex; 
-    align-items: left; /* Aligns items vertically */
+    align-items: left; 
     max-width: 100%;
 }
 
 #aboutMeParagraph {
-    flex: 2; /* Allows the text to take more space */
+    flex: 2; 
     max-width: 70%;
     text-align: left;
 }
@@ -174,7 +174,7 @@ a {
 /*IMAGE STYLING*/
 
 #heroImgContainer {
-    max-width: 100%; /* image stays on the left */
+    max-width: 100%; 
 }
 
 #heroImg {
@@ -350,11 +350,11 @@ a {
     }
 
     #menuContainer {
-        display: flex; /* Ensure proper spacing */
-        flex-direction: row; /* Stack links vertically */
-        align-items: center; /* Center align */
-        gap: 2rem; /* Increase spacing between links */
-        margin-bottom: 20px; /* Optional: Add more bottom spacing */
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        gap: 2rem; 
+        margin-bottom: 20px; 
     }
 
     #whatIdoWords {
@@ -413,9 +413,9 @@ a {
 
   
 #aboutMeImageSection {
-    flex: 1; /* Makes the image section take equal space */
+    flex: 1; 
     display: flex;
-    justify-content: flex-end; /* Aligns image to the right */
+    justify-content: flex-end; 
 }
 
 #aboutMeImg {
