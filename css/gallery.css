@@ -19,7 +19,7 @@
 .box > img {
   width: 100%;
   height: calc(100% - 10vh);
-  -o-object-fit: covernone;
+  -o-object-fit: none;
      object-fit: cover;
   transition: 0.5s;
 }
