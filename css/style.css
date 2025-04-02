@@ -13,34 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    padding-top: 10%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-}
-
-.lightbox-content {
-    max-width: 80%;
-    max-height: 80vh;
-    border-radius: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 /* SECTIONS */
 
@@ -153,7 +125,7 @@ a {
   } 
 
   #kamillah1 {
-    font-family: "Karla", serif;
+    font-family: "Karla", serif !important;
     color: #BF712C;
     font-size: 8rem;
     font-weight: 1000;
@@ -163,7 +135,7 @@ a {
 }
 
 #riederh1 {
-    font-family: "Karla", serif;
+    font-family: "Karla", serif !important;
     color: #BF712C;
     font-size: 9.7rem;
     font-weight: 1000;
