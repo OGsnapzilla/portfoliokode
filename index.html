@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIEDERVISUALS</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <!--<link rel="stylesheet" href="css/gallery.css">-->
     <script src="js/sectionsAnimation.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/button.js" defer></script>
+
 
     <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- jQuery (Required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Carousel JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    
 
     <!--IMPORTED FONTS-->
@@ -41,7 +54,7 @@
         <section id="nameContainer">
 
             <p id="whatIdoWords">UX RESEARCH & DESIGN <br> FRONT END DEVELOPMENT</p>
-            <h1 id="kamillaRiederh1">KAMILLA RIEDER</h1>
+            <h1 id="kamillah1">KAMILLA</h1> <h1 id="riederh1">RIEDER</h1>
 
             <section id="menuContainer">
                 <a class="menuFont hover-underline-animation" href="#aboutMeSection">ABOUT ME</a>
@@ -69,20 +82,20 @@
     <img id="aboutMeImg" src="images/aboutmeimg.webp" alt="">
   </section>
 
-        <p id="aboutMeParagraph">Born and raised in Denmark, I’ve spent most of my life committed to keeping my self-growth in motion. <br>
+        <p id="aboutMeParagraph">Born and raised in Denmark, I’ve spent a good amount of time exploring different paths in life. <br>
           This means I have acquired a wide array of experience throughout the years: 
            from living abroad, to working as a tattoo artist for five years, <br>
            then deciding to go back to school studying computer science and finally ending up in the world of multimedia design, <br>
            in which I have acquired a certain love for UX design and front end development. 
            <br><br>It is safe to say <i>I love learning. </i><br> <br>
 
-           While my career-path hasn't exactly been linear, I find that, thanks to the occasional re-routing, I've come out of it <br>
+           While my career-path hasn't exactly been linear, I find that thanks to the occasional re-routing, I've come out of it <br>
            with a wide skillset that can be applied in various aspects of my life. <br>
            I have a creative approach to resolving issues, I feel confident in jumping into new and unfamiliar territories, <br>
            and I'm well-versed in working closely together with coworkers and clients. <br><br>
 
-           I definitely also have a certain knack for collecting hobbies, which include, but aren't limited to, reading books, photography, <br>
-           crocheting, playing games (preferably the ones with dragons, monsters and magic), tending to my garden, and riding my motorbike in the summer months.
+           I definitely also have a certain knack for collecting hobbies, which include (but aren't limited to) reading books, photography, gardening, <br>
+           crocheting, playing games (preferably the ones with dragons, monsters and magic),  and riding my motorbike in the summer months.
            <br><br>
            In short: <br><br>Hi. I'm Kamilla, and I'm a nerd.
 
@@ -96,6 +109,7 @@
     </section>
 
        <!-- PROJECTS -->
+
        <section id="projectsSection" class="hidden">
         <section class="headlines">
             <h2>PREVIOUS</h2>
@@ -105,32 +119,52 @@
 
     <section class="container">
 
-      <section class="box">
-        <span>Skateducate </span> <br>
-        <p>Second semester examination project, 2025. <br><br>
-        <b>Goal:</b> To  upgrade their website and strengthen Skateducates visual identity. <br>
-        <b>Solution:</b> Drawing a parallel from the associations logo, we created a colorful and fun website that corresponds with Skateducates values.
-        <br></p>
-        <img src="images/su.webp">
+      <!-- Lightbox Section -->
+   
 
-      </section>
-      <section class="box">
-        <span>Interactive storytelling</span> <br>
-        <p>Interactive storytelling group project for the Steno Museum, 2024<br><br>
-          <b>Goal:</b> Develop a fun and interactive teaching tool for the museums target group.  <br>
-          <b>Solution:</b> We created a horizontal 'travel through time' experience, in which the user gets relevant information as they walk along the timeline.
-          <br></p>
-        <img src="images/is.webp">
-      </section>
-      <section class="box">
-        <span>Online Magazine</span> <br>
-        <p>Insectionidual project, 2024. <br><br>
-        <b>Goal:</b> To become familiar with UX research metholodologies and develop an informational magazine about our own chosen subject.  <br>
-        </p>
-        <img src="images/tk.webp">
+      <div class="wrap">
+        <div class="tile"> 
+          <img src='images/su.webp'/>
+          <div class="text">
+          <h1>Skateducate</h1>
+          <h2 class="animate-text">Second semester examination project, 2025.</h2>
+          <p class="animate-text"><b>Goal:</b> To  upgrade their website and strengthen Skateducates visual identity. <br>
+            <b>Solution:</b> Drawing a parallel from the associations logo, we created a colorful and fun website that corresponds with Skateducates values. <br><br>
+          
+          The website is set to launch in May, 2025.</p>
+     
+          </div>
+         </div>
         
-      </section>
+        
+        <div class="tile"> 
+          <img src='images/is.webp'/>
+          <div class="text">
+          <h1>Interactive storytelling</h1>
+          <h2 class="animate-text">Group project for the Steno Museum, 2024</h2>
+          <p class="animate-text"><b>Goal:</b> Develop a fun and interactive teaching tool for the museums target group.  <br>
+            <b>Solution:</b> We created a horizontal 'travel through time' experience, in which the user gets relevant information as they walk along the timeline. </p>
+    
+          </div>
+         </div>
+          
+          <div class="tile"> 
+          <img src='images/tk.webp'/>
+          <div class="text">
+          <h1>Online Magazine</h1>
+          <h2 class="animate-text">Individual project, 2024</h2>
+          <p class="animate-text"><b>Goal:</b> To become familiar with UX research metholodologies and develop an informational magazine about our own chosen subject.  </p>
+     
+          </div>
+         </div>
+        </div>
+          
+          
+        </div>
+
+
     </section>
+  
         
     <!-- CONTACT -->
     <section id="contactSection" class="hidden">
@@ -150,6 +184,8 @@
     <section class="footerSection"></section>
 
 </section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
 
 </main>
 </body>
